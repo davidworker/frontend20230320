@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page</title>
+    <style>
+        *,*::after,*::before {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            scroll-behavior: smooth;
+        }
+
+        .page {
+            width: 100%;
+            height: 100vh;
+            background:#dedede;
+            color: red;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            font-weight: 800;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            left:0;
+            width: 100%;
+            text-align: center;
+            background: #fff;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#product">Product</a>
+    </div>
+
+    <div class="page">
+        Home
+    </div>
+    <div class="page" id="about">
+        About
+    </div>
+    <div class="page" id="product"> 
+        Product
+    </div>
+</body>
+</html>
