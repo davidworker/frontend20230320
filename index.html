@@ -25,19 +25,24 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <div>
-        Hello World
-    </div>
-    <div id="first-name" class="fullname" mmm="111">
-        David
-    </div>
+    <style>
+        div {
+            background: red;
+            color: yellow;
+            width: 300px;
+        }
 
-    <div id='first-name' class='fullname'>
-        無符合規範
-    </div>
-
-    <div class="fullname" class="only">
-        屬性重複宣告
-    </div>
+        span {
+            background: blue;
+            color: #fff;
+            width: 300px;
+        }
+    </style>
+    <!-- div display: block -->
+    <div>我是第一 div</div>
+    <div>我是第二 div</div>
+    <!-- span display: inline -->
+    <span>我是第一 span</span>
+    <span>我是第二 span</span>
 </body>
 </html>
