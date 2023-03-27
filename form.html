@@ -50,7 +50,7 @@
     </form> -->
 
     <form action="">
-        <h3>單選</h3>
+        <!-- <h3>單選</h3>
         <input type="radio" name="gender" value="male"> 男
         <input type="radio" name="gender" value="female"> 女
 
@@ -59,7 +59,30 @@
 
         <h3>選擇興趣</h3>
         <input type="checkbox" name="ins[]" value="baseball"> 棒球
-        <input type="checkbox" name="ins[]" value="baseketball"> 藍球
+        <input type="checkbox" name="ins[]" value="baseketball"> 藍球 -->
+        
+        <div>
+            <h3>單選</h3>
+            <select name="city">
+                <option value="">選擇縣市</option>
+                <option value="TP">台北</option>
+                <option value="台中">台中</option>
+                <option>高雄</option>
+            </select>
+            <h3>多選</h3>
+            <select name="city[]" multiple>
+                <option value="">選擇縣市</option>
+                <option value="TP">台北</option>
+                <option value="台中">台中</option>
+                <option>高雄</option>
+            </select>
+        </div>
+
+        <div>
+            <textarea name="remark" cols="50" rows="30" style="resize:none;"></textarea>
+        </div>
+
+
         <div>
             <button>SS</button>
         </div>
