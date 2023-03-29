@@ -7,34 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML contact us</title>
     <link rel="stylesheet" href="css/contact_us.css">
-
-    <style>
-        .label {
-            background: yellow;
-            font-size: 30px;
-        }
-
-        #fullname {
-            width: 100%;
-            height: 80px;
-            font-size:50px;
-        }
-
-        .radio {
-            width: 100px;
-            height: 100px;
-        }        
-    </style>
 </head>
 
 <body>
-    <form method="post" action="https://book.niceinfos.com/frontend/assets/html_contact_form/api.php">
+    <form id="contact-form" method="post" action="https://book.niceinfos.com/frontend/assets/html_contact_form/api.php">
         <div>
             <div>
-                <label for="fullname" style="color: red;">全名</label>
+                <label for="fullname">全名</label>
             </div>
             <div>
-                <input type="text" name="fullname" id="fullname">
+                <input type="text" name="fullname" id="fullname" class="input-text">
             </div>
         </div>
         <div>
@@ -79,11 +61,11 @@
                 <label for="remark">其他建議</label>
             </div>
             <div>
-                <textarea name="remark" id="remark" cols="30" rows="10"></textarea>
+                <textarea name="remark" id="remark"></textarea>
             </div>
         </div>
 
-        <div>
+        <div class="fn">
             <button>提交</button>
         </div>
     </form>
