@@ -6,13 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML contact us</title>
+    <link rel="stylesheet" href="css/contact_us.css">
+
+    <style>
+        label {
+            background: yellow;
+            font-size: 30px;
+        }
+    </style>
 </head>
 
 <body>
     <form method="post" action="https://book.niceinfos.com/frontend/assets/html_contact_form/api.php">
         <div>
             <div>
-                <label for="fullname">全名</label>
+                <label for="fullname" style="color: red;">全名</label>
             </div>
             <div>
                 <input type="text" name="fullname" id="fullname">
