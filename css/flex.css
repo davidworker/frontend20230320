@@ -1,3 +1,7 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
 .flex {
     display: flex;
     background: yellow;
@@ -38,4 +42,26 @@
 
 .flex-wrap-r {
     flex-wrap: wrap-reverse;
+}
+
+.jc-e {
+    justify-content: flex-end;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-sa {
+    justify-content: space-around;
+}
+
+.jc-sb {
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.jc-se {
+    justify-content: space-evenly;
 }
