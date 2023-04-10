@@ -139,3 +139,7 @@ a {
     width: 30px;
     height: 30px;
 }
+
+.slider-dots li:nth-child(2) .slider-dot {
+    background:red;
+}
