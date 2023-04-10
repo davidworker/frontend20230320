@@ -5,6 +5,7 @@
     margin: auto;
     margin-top: 20px;
     position: relative;
+    z-index: 2;
 }
 
 .eye {
@@ -55,5 +56,24 @@
     left: 50%;
     margin-left: -25px;
     border-radius: 50px;
+}
 
+.ad-banner {
+    background: rgba(0, 0, 0, 0.199);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 99;
+}
+
+.ad-content {
+    background: #fff;
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: calc(50% - 100px);
 }
