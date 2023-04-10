@@ -26,3 +26,16 @@
 .dir-cr {
     flex-direction: column-reverse;
 }
+
+.large {
+    width: 500px;
+}
+
+.flex-wrap {
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+}
+
+.flex-wrap-r {
+    flex-wrap: wrap-reverse;
+}
