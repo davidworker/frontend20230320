@@ -204,3 +204,19 @@ a {
     position: absolute;
     right: 0;
 }
+
+.group1 .switch + .item {
+    color: red;
+}
+
+.group2 .switch + .item {
+    color: red;
+}
+
+/* .group1 .switch ~ .item {
+    color: red;
+}
+
+.group2 .switch ~ .item {
+    color: red;
+} */
