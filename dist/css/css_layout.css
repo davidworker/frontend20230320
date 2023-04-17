@@ -3,3 +3,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.container {
+    max-width: 1000px;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+.header {
+    background: red;
+}
+
+.header2 {
+    background: red;
+    margin-top: 20px;
+}
