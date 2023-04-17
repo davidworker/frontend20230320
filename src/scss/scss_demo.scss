@@ -1,0 +1,18 @@
+$w: 200px;
+$h: 200px;
+
+.s1 {
+    width: $w;
+    height: $h;
+    background: red;
+}
+
+.s2 {
+    width: $w;
+    height: $h;
+    background: yellow;
+}
+
+.s3 {
+    font-size: $w;
+}

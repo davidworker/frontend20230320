@@ -7,6 +7,5 @@
             "savePathReplacementPairs": null
         }
     ],
-    "liveServer.settings.root": "/dist",
-    "liveServer.settings.CustomBrowser": "chrome"
+    "liveServer.settings.root": "/dist"    
 }
