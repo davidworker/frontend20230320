@@ -4,15 +4,26 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #000;
+}
+
 .container {
-    max-width: 1000px;
+    max-width: 700px;
     height: auto;
     position: relative;
     margin: auto;
 }
 
 .header {
-    background: red;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .header2 {
