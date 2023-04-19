@@ -26,6 +26,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
   width: 100%;
 }
 .header .header-content {
@@ -76,12 +77,20 @@ body {
   height: 100vh;
   background-color: aqua;
 }
-.join-form .join-form-content {
-  background: rgb(255, 210, 210);
+.join-form .join-form-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.join-form .join-form-wrap .join-form-content {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  background: rgb(255, 210, 210);
+  height: 300px;
 }
-.join-form .join-form-content > div {
+.join-form .join-form-wrap .join-form-content > div {
   width: 50%;
 }
 

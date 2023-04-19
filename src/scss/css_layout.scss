@@ -13,10 +13,10 @@ body {
 }
 
 .header {
-    
     position: fixed;
     top:0;
     left: 0;
+    z-index: 2;
     width: 100%;
 
     .header-content {
@@ -79,13 +79,23 @@ body {
     height: 100vh;
     background-color: aqua;
 
-    .join-form-content {
-        background: rgb(255, 210, 210);
+    .join-form-wrap {
+        
         display:flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     
-        >div {
-            width: 50%;
+        .join-form-content {
+            width: 100%;
+            display:flex;
+            justify-content: space-between;
+            background: rgb(255, 210, 210);
+            height: 300px;
+
+            >div {
+                width: 50%;
+            }
         }
     }
 }
