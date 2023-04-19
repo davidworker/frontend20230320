@@ -42,6 +42,9 @@ body {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 18px;
 }
+.header .menu ul li:hover {
+  color: rgb(47, 47, 248);
+}
 .header .menu ul li:last-child {
   margin-right: 0;
 }
@@ -61,6 +64,15 @@ body {
   justify-content: flex-end;
   align-items: center;
   height: 100%;
+}
+
+.join-form-content {
+  background: rgb(255, 210, 210);
+  display: flex;
+  justify-content: space-between;
+}
+.join-form-content > div {
+  width: 50%;
 }
 
 .wrap {
