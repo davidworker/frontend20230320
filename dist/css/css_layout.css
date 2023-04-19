@@ -23,6 +23,12 @@ body {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header .header-content {
   background: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
@@ -32,23 +38,23 @@ body {
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
 }
-.header .menu ul {
+.header .header-content .menu ul {
   list-style-type: none;
   display: flex;
 }
-.header .menu ul li {
+.header .header-content .menu ul li {
   text-align: center;
   margin-right: 15px;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 18px;
 }
-.header .menu ul li:hover {
+.header .header-content .menu ul li:hover {
   color: rgb(47, 47, 248);
 }
-.header .menu ul li:last-child {
+.header .header-content .menu ul li:last-child {
   margin-right: 0;
 }
-.header .menu ul li .en {
+.header .header-content .menu ul li .en {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
@@ -66,15 +72,20 @@ body {
   height: 100%;
 }
 
-.join-form-content {
+.join-form {
+  height: 100vh;
+  background-color: aqua;
+}
+.join-form .join-form-content {
   background: rgb(255, 210, 210);
   display: flex;
   justify-content: space-between;
 }
-.join-form-content > div {
+.join-form .join-form-content > div {
   width: 50%;
 }
 
 .wrap {
   height: 100vh;
+  background: yellow;
 }/*# sourceMappingURL=css_layout.css.map */
