@@ -118,6 +118,23 @@ body {
   right: 0;
   top: 30px;
 }
+.join-form .join-form-wrap .join-form-content .slogan {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+.join-form .join-form-wrap .join-form-content .slogan::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 140px);
+  width: 0;
+  height: 3px;
+  border-left: solid 100px #1072c2;
+  border-right: solid 180px #fff;
+}
 
 .wrap {
   height: 100vh;
