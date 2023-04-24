@@ -78,6 +78,19 @@ body {
 .join-form{
     height: 100vh;
     background-color: aqua;
+    background-image: url(../images/banner.jpeg);
+    background-size:cover;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.356);
+    }
 
     .join-form-wrap {
         
