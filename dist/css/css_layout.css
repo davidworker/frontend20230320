@@ -101,7 +101,7 @@ body {
   justify-content: space-between;
   background-color: rgb(5, 47, 138);
   color: #fff;
-  height: 300px;
+  height: 350px;
 }
 .join-form .join-form-wrap .join-form-content > div {
   width: 50%;
@@ -134,6 +134,42 @@ body {
   height: 3px;
   border-left: solid 100px #1072c2;
   border-right: solid 180px #fff;
+}
+.join-form .join-form-wrap .join-form-content .text-content {
+  line-height: 30px;
+  text-align: justify;
+}
+.join-form .join-form-wrap .join-form-content .form-control {
+  margin-bottom: 15px;
+}
+.join-form .join-form-wrap .join-form-content .form-control input {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  border-radius: 4px;
+}
+.join-form .join-form-wrap .join-form-content .join-form-submit {
+  text-align: right;
+}
+
+.button {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.button.primary {
+  background: #1042cc;
+  color: #fff;
+}
+.button.primary:hover {
+  background: #285ef3;
 }
 
 .wrap {
