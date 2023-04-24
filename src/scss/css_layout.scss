@@ -1,6 +1,7 @@
 @import 'reset';
 
-body,html {
+body,
+html {
     background: #000;
     scroll-behavior: smooth;
 }
@@ -15,7 +16,7 @@ body,html {
 
 .header {
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     z-index: 2;
     width: 100%;
@@ -34,23 +35,23 @@ body,html {
             ul {
                 list-style-type: none;
                 display: flex;
-    
+
                 li {
                     text-align: center;
                     margin-right: 15px;
                     font-family: 'Noto Sans TC', sans-serif;
                     font-size: 18px;
-    
+
                     &:hover {
                         color: rgb(47, 47, 248);
                     }
-    
+
                     &:last-child {
                         margin-right: 0;
                     }
-    
+
                     .en {
-                        text-transform: uppercase; 
+                        text-transform: uppercase;
                         font-size: 14px;
                         font-weight: 800;
                         font-family: 'Courier New', Courier, monospace;
@@ -60,7 +61,7 @@ body,html {
         }
     }
 
-    
+
 }
 
 
@@ -76,13 +77,14 @@ body,html {
     }
 }
 
-.join-form{
+.join-form {
     height: 100vh;
     background-color: rgb(41, 41, 41);
     background-image: url(../images/banner.jpeg);
-    background-size:cover;
+    background-size: cover;
     position: relative;
 
+    // .join-form::before
     &::before {
         content: "";
         width: 100%;
@@ -94,15 +96,14 @@ body,html {
     }
 
     .join-form-wrap {
-        
-        display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
-    
+
         .join-form-content {
             width: 100%;
-            display:flex;
+            display: flex;
             justify-content: space-between;
             background-color: rgb(5, 47, 138);
             color: #fff;
@@ -110,12 +111,13 @@ body,html {
 
             >div {
                 width: 50%;
-                padding:30px;
+                padding: 30px;
             }
 
             .join-form-left-side {
                 position: relative;
 
+                // .join-form-left-side::before
                 &::before {
                     content: '';
                     position: absolute;
@@ -133,6 +135,7 @@ body,html {
 
             .form-control {
                 margin-bottom: 15px;
+
                 input {
                     width: 100%;
                     height: 40px;
@@ -140,7 +143,7 @@ body,html {
                     outline: none;
                     padding-left: 10px;
                     padding-right: 10px;
-                    font-size:20px;
+                    font-size: 20px;
                     border-radius: 4px;
                 }
             }
@@ -157,16 +160,16 @@ body,html {
     padding: 10px 20px;
     border: 0;
     border-radius: 4px;
-    font-size:20px;
+    font-size: 20px;
     font-weight: 600;
     cursor: pointer;
 
     &.primary {
-        background:#1042cc;
-        color:#fff;
+        background: #1042cc;
+        color: #fff;
 
         &:hover {
-            background:#285ef3;
+            background: #285ef3;
         }
     }
 }
@@ -194,11 +197,11 @@ body,html {
 
 .courses {
     height: 100vh;
-    background-color:rgb(65, 65, 65);
+    background-color: rgb(65, 65, 65);
     background-image: url(../images/process.jpeg);
     background-size: cover;
     position: relative;
-    color:#fff;
+    color: #fff;
     padding-top: 120px;
 
     &::before {

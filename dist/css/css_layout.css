@@ -11,7 +11,8 @@ a {
   text-decoration: none;
 }
 
-body, html {
+body,
+html {
   background: #000;
   scroll-behavior: smooth;
 }
