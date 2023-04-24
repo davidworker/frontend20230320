@@ -75,7 +75,7 @@ body {
 
 .join-form {
   height: 100vh;
-  background-color: aqua;
+  background-color: rgb(0, 110, 255);
   background-image: url(../images/banner.jpeg);
   background-size: cover;
   position: relative;
@@ -99,11 +99,24 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background: rgb(255, 210, 210);
+  background-color: rgb(5, 47, 138);
+  color: #fff;
   height: 300px;
 }
 .join-form .join-form-wrap .join-form-content > div {
   width: 50%;
+  padding: 30px;
+}
+.join-form .join-form-wrap .join-form-content .join-form-left-side {
+  position: relative;
+}
+.join-form .join-form-wrap .join-form-content .join-form-left-side::before {
+  content: "";
+  position: absolute;
+  border-left: 3px dashed #fff;
+  height: calc(100% - 60px);
+  right: 0;
+  top: 30px;
 }
 
 .wrap {
