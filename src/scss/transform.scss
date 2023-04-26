@@ -89,3 +89,21 @@
     font-size: 5px;
     transform: scale(0.5);
 }
+
+.bg-change {
+    margin: 50px auto;
+    background: red;
+    color: yellow;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: background;
+    transition-duration: 3s;
+
+    &:hover {
+        background: yellow;
+        color: red;
+    }
+}
