@@ -140,6 +140,8 @@
         ~.to-run {
             animation-name: run-m;
             animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
         }
     }
 }
