@@ -59,11 +59,15 @@
         position: relative;
         overflow: hidden;
 
+        >div:first-child {
+            transition-duration: 1s;
+        }
+
         &:hover {
             >div:first-child {
+
                 transform: scale(2);
             }
-
         }
 
 
@@ -101,6 +105,7 @@
     justify-content: center;
     transition-property: background;
     transition-duration: 3s;
+    transition-delay: 2s;
 
     &:hover {
         background: yellow;

@@ -67,6 +67,9 @@ a {
   position: relative;
   overflow: hidden;
 }
+.product .product-img > div:first-child {
+  transition-duration: 1s;
+}
 .product .product-img:hover > div:first-child {
   transform: scale(2);
 }
@@ -99,6 +102,7 @@ a {
   justify-content: center;
   transition-property: background;
   transition-duration: 3s;
+  transition-delay: 2s;
 }
 .bg-change:hover {
   background: yellow;
