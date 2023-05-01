@@ -2,6 +2,8 @@
 
 body {
     background-color: #4898da;
+    width: 100%;
+    overflow: hidden;
 }
 
 .cloud {
@@ -12,6 +14,10 @@ body {
     top: 120px;
     left: 50px;
     border-radius: 300px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 
     &::after {
         content: '';
@@ -21,7 +27,7 @@ body {
         border-radius: 100px;
         top: -50px;
         left: 80px;
-        background: rgb(255, 255, 255);
+        background: inherit
     }
 
     &::before {
@@ -32,18 +38,32 @@ body {
         top: -80px;
         left: 170px;
         border-radius: 500px;
-        background: #fff;
+        background: inherit;
     }
 
     &.c2 {
         top: 500px;
         left: 100px;
         transform: scale(0.8);
+        animation-duration: 2s;
     }
 
     &.c3 {
         top: 800px;
         left: 20px;
         transform: scale(0.5);
+        animation-duration: 1s;
+    }
+}
+
+@keyframes move {
+    0% {
+        left: 50px;
+        background: #fff;
+    }
+
+    100% {
+        left: 100%;
+        background: #000;
     }
 }
