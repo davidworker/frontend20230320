@@ -1,0 +1,15 @@
+@import 'reset';
+
+body {
+    background-color: #4898da;
+}
+
+.cloud {
+    width: 500px;
+    height: 150px;
+    background: #fff;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    border-radius: 300px;
+}
