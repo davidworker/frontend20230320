@@ -344,6 +344,11 @@ html {
     transform: rotate(-45deg);
     top: -5px;
   }
+  .join-form .join-form-wrap {
+    height: unset;
+    align-items: flex-start;
+    padding-top: 120px;
+  }
   .join-form .join-form-wrap .join-form-content {
     flex-direction: column;
     background: transparent;

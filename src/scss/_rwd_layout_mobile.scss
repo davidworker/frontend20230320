@@ -71,14 +71,15 @@
 
     .join-form {
 
-        // .join-form::before
-        &::before {}
-
         .join-form-wrap {
+            height: unset;
+            align-items: flex-start;
+            padding-top: 120px;
 
             .join-form-content {
                 flex-direction: column;
                 background: transparent;
+
 
                 >div {
                     width: 100%;
