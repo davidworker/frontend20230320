@@ -344,6 +344,10 @@ html {
     transform: rotate(-45deg);
     top: -5px;
   }
+  .join-form {
+    height: unset;
+    min-height: 100vh;
+  }
   .join-form .join-form-wrap {
     height: unset;
     align-items: flex-start;
@@ -352,6 +356,8 @@ html {
   .join-form .join-form-wrap .join-form-content {
     flex-direction: column;
     background: transparent;
+    height: unset;
+    padding-bottom: 60px;
   }
   .join-form .join-form-wrap .join-form-content > div {
     width: 100%;

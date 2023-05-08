@@ -70,6 +70,8 @@
     }
 
     .join-form {
+        height: unset;
+        min-height: 100vh;
 
         .join-form-wrap {
             height: unset;
@@ -79,6 +81,8 @@
             .join-form-content {
                 flex-direction: column;
                 background: transparent;
+                height: unset;
+                padding-bottom: 60px;
 
 
                 >div {
@@ -88,9 +92,6 @@
                 }
 
                 .join-form-left-side {
-
-
-                    // .join-form-left-side::before
                     &::before {
                         right: unset;
                         top: unset;
@@ -103,33 +104,6 @@
                         border-bottom: 3px dashed #fff;
                     }
                 }
-
-                .text-content {
-
-
-                    .text-more {}
-                }
-
-                #text-more-box {
-
-
-                    &:checked {
-                        ~.text-content {
-
-
-
-                            .text-more {}
-                        }
-                    }
-                }
-
-                .form-control {
-
-
-                    input {}
-                }
-
-                .join-form-submit {}
             }
         }
     }
