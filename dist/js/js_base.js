@@ -158,4 +158,15 @@ students.forEach((student, index) => {
 // });
 
 
-console.table(students);
+for (let start = 1; start <= 9; start++) {
+    // console.log(start);
+}
+
+
+let n = 1;
+let n2 = n++;
+let n3 = ++n;
+
+console.log(n);
+console.log(n2);
+console.log(n3);
