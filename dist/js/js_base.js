@@ -119,15 +119,43 @@ const addNum = (originNum, addNum) => {
     // 判斷是否真的是數字
     let total = originNum + addNum;
     // 判斷是否超過一百分
-    console.log(`In function: ${total}`);
+    // console.log(`In function: ${total}`);
     return total;
 }
 
-let students = [40, 50, 80, 75];
-let add = 30;
-students.forEach((s, index) => {
-    students[index] = addNum(s, add);
+let students = [];
+students.push({
+    name: 'David',
+    num: 40
 });
+
+students.push({
+    name: 'John',
+    num: 50
+});
+
+students.push({
+    name: 'Helen',
+    num: 80
+});
+
+students.push({
+    name: 'Mary',
+    num: 20
+});
+
+let add = 30;
+students.forEach((student, index) => {
+    console.log(`Student ${student.name}: ${student.num}`);
+    student.num = addNum(student.num, add);
+    students[index] = student;
+})
+
+
+// students.forEach((s, index) => {
+//     students[index] = addNum(s, add);
+//     console.log(`${studentNames[index]}: ${s}`);
+// });
 
 
 console.table(students);
