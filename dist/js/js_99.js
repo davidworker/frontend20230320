@@ -47,12 +47,38 @@ const genTable = () => {
     theadHTML += '</tr>';
     // 更新 thead 內容
     thead.innerHTML = theadHTML;
+
+    // tbody UI 內容資料產生 1
+    let result = {};
+    for (let i = 1; i <= n2.value; i++) {
+        result[i] = [];
+        for (let j = 1; j <= n1.value; j++) {
+            result[i].push(i * j);
+        }
+    }
+
+    // 產生 UI 2
+    let tbodyHTML = '';
+    for (let row in result) {
+        tbodyHTML = `<tr><td>${row}</td>`;
+        let columns = result[row];
+        columns.forEach(value => {
+            tbodyHTML += `<td>${value}</td>`;
+        });
+
+        tbodyHTML += '</tr>';
+        tbody.innerHTML += tbodyHTML;
+    }
+
+    console.log(result);
+
+
     return;
 
 
 
 
-    let result = {};
+    // let result = {};
     for (let i = 1; i <= n1.value; i++) {
         thead.push(i);
         result[i] = [];
