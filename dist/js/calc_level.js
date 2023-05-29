@@ -1,47 +1,33 @@
-const sayHi = () => {
-    let name = document.querySelector('#name');
+const calcLevel = () => {
+    let number = document.querySelector('#number');
 
-    if (!name) {
+    if (!number) {
         alert('沒有輸入框');
         return;
     }
 
-    if (!name.value) {
-        alert('請輸入姓名');
+    if (!number.value) {
+        alert('請輸入分數');
         return
     }
 
     let response = document.querySelector('#response');
-    response.innerHTML = `Hi!, ${name.value}`;
-    name.value = '';
-    name.focus();
+    // 修正為計算等級
+    response.innerHTML = `Hi!, ${number.value}`;
+    number.value = '';
+    number.focus();
 }
 
 
-let hi = document.querySelector('#hi');
+let level = document.querySelector('#level');
 
-hi.addEventListener('click', sayHi);
+level.addEventListener('click', calcLevel);
 
 
-let name = document.querySelector('#name');
+let number = document.querySelector('#number');
 
-// name.addEventListener('change', () => {
-//     if (!name.value) {
-//         alert('請輸入姓名');
-//         name.focus();
-//     }
-// })
-
-// name.addEventListener('blur', () => {
-//     console.log(`blur: ${name.value}`);
-// })
-
-// name.addEventListener('keypress', () => {
-//     console.log(`keypress: ${name.value}`);
-// })
-
-name.addEventListener('keyup', (e) => {
+number.addEventListener('keyup', (e) => {
     if (e.key == 'Enter') {
-        sayHi();
+        calcLevel();
     }
 })
