@@ -44,6 +44,9 @@ let vm = Vue.createApp({
             this.$refs.itemValue.focus();
             this.update();
         },
+        doRemove(index) {
+            console.log(index);
+        },
         toDone(index) {
             let value = this.pending[index];
             this.done.push(value);
@@ -56,6 +59,7 @@ let vm = Vue.createApp({
             this.done.splice(index, 1);
             this.update();
         },
+
         update() {
             database.set('todo-pending', this.pending);
             database.set('todo-done', this.done);
