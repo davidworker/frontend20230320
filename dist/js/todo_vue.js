@@ -48,14 +48,19 @@ let vm = Vue.createApp({
             let value = this.pending[index];
             this.done.push(value);
             this.pending.splice(index, 1);
+            database.set('todo-pending', this.pending);
+            database.set('todo-done', this.done);
         },
         toPending(index) {
             let value = this.done[index];
             this.pending.push(value);
             this.done.splice(index, 1);
+            database.set('todo-pending', this.pending);
+            database.set('todo-done', this.done);
         }
     },
     mounted() {
         this.pending = database.get('todo-pending', []);
+        this.done = database.get('todo-done', []);
     }
 }).mount('#app');
