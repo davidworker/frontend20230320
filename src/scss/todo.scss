@@ -54,6 +54,18 @@
     input[type="checkbox"]:checked~label {
         text-decoration: line-through;
     }
+
+    >ul li {
+        padding: 10px;
+        background: #ff6123;
+        color: #fff;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background: #b13d10;
+        }
+    }
 }
 
 .todo-status {
