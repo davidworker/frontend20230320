@@ -18,6 +18,14 @@
                 {{ response }}
             </div>
         </div>
+
+        <h2>上傳檔案 FORM</h2>
+        <form method="POST" action="https://book.niceinfos.com/frontend/api/">
+            <input type="hidden" name="action" value="upload">
+            <input type="file" name="file">
+            <button type="submit">Upload</button>
+        </form>
+
     </div>
 </body>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
