@@ -15,6 +15,7 @@
 
 <body>
     <input type="text" id="account" value="123">
+    <input type="checkbox" id="agree">
 
     <div class="item">item 1</div>
     <div class="item">item 2</div>
@@ -53,6 +54,11 @@
             console.log($('#account').hasClass('active'));
             $('#account').toggleClass('active');
         }, 1000)
+
+        setTimeout(() => {
+            $('#agree').prop('checked', true);
+        }, 3000)
+
 
 
     })(jQuery)
