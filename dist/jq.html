@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery</title>
+    <style>
+        .active {
+            background: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,6 +41,18 @@
         $('#account').on('keyup', (e) => {
             console.log(e);
         })
+
+        // $('#account').addClass('active');
+
+        // setTimeout(() => {
+        //     $('#account').removeClass('active');
+        // }, 3000);
+
+
+        setInterval(() => {
+            console.log($('#account').hasClass('active'));
+            $('#account').toggleClass('active');
+        }, 1000)
 
 
     })(jQuery)
