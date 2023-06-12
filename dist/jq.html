@@ -9,20 +9,32 @@
 </head>
 
 <body>
-    <div id="uid">UID</div>
+    <input type="text" id="account" value="123">
+
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+    <div class="item">item 4</div>
+    <div class="item">item 5</div>
 </body>
 <script src="js/jquery-3.7.0.min.js"></script>
 <script>
-    let $ = 'Hello';
-
     // 使用 closure 避免 $ 被複寫
     (($) => {
-        // innerHTML
-        let uid = $('#uid').html();
-        console.log(uid);
-    })(jQuery)
+        let account = $('#account').val();
+        // let account = undefined;
+        // try {
+        //     let account = document.querySelector('#account').value;
+        // } catch (e) { }
 
-    console.log($);
+        let items = $('.item');
+        // let items = document.querySelectorAll('.item');
+        items.each((index, item) => {
+            console.log(index, $(item).html());
+        })
+
+
+    })(jQuery)
 
 
 </script>
