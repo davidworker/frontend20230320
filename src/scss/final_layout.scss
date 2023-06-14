@@ -25,11 +25,12 @@
         flex-direction: column;
         gap: 5px;
         margin-right: 15px;
+        cursor: pointer;
 
         >span {
             width: 100%;
             height: 4px;
-            background: red;
+            background: #000;
         }
     }
 
