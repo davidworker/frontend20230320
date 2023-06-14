@@ -36,4 +36,8 @@ ul {
 .header .header-menu {
   display: flex;
   gap: 30px;
+}
+.header .header-icon {
+  display: flex;
+  gap: 30px;
 }/*# sourceMappingURL=final_layout.css.map */
