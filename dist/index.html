@@ -5,72 +5,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site | product</title>
-    <meta name="description" content="This is Product content.">
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/icon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/icon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/icon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/icon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/icon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/icon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/icon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/icon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/images/icon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/icon/favicon-16x16.png">
-    <link rel="manifest" href="/images/icon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/images/icon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <title>Final Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/final_layout.css">
 </head>
 
 <body>
-    <style>
-
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-        div {
-            background: red;
-            color: yellow;
-            width: 300px;
-        }
-    
-    /* 
-        span {
-            background: blue;
-            color: #fff;
-            width: 300px;
-        } */
-    </style>
-    <!-- div display: block -->
-    <div>我是第一 div</div>
-    <div>我是第二 div</div>
-    <!-- span display: inline -->
-    <span>我是第一 span</span>
-    <span>我是第二 span</span>
-
-    <div>
-        <a href="https://www.google.com">
-            To Google
-        </a>
-        <a href="https://www.google.com" target="_blank">To Google New Tab</a>
+    <div class="header">
+        <div class="container">
+            <input type="checkbox" id="mobile-checkbox">
+            <label class="header-mobile-switch" for="mobile-checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="header-logo">
+                <a href="final_layout.html">
+                    <img src="images/final_layout/logo.png" alt="LOGO">
+                </a>
+            </div>
+            <div class="header-menu">
+                <ul>
+                    <li>
+                        <a href="#">關於XT-GRIP</a>
+                    </li>
+                    <li>
+                        <a href="#">耐摔設計</a>
+                    </li>
+                    <li>
+                        <a href="#">購買產品</a>
+                    </li>
+                    <li>
+                        <a href="#">聯絡我們</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-icon">
+                <div><i class="fa-regular fa-user"></i></div>
+                <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="header-lang">EN</div>
+        </div>
     </div>
-
-    <div style="width:100px; height: 100px; background: red;">
-        <img src="images/dog.jpeg" alt="我是一隻小狗" style="width:100%; height: auto;">
+    <div class="slider-block" id="app-slider">
+        <div class="slider">
+            <ul class="slider-item">
+                <template v-for="(item, itemIndex) in items">
+                    <li :class="{active: currentIndex == itemIndex}">
+                        <div class="slider-bg" :style="{'background-image': `url(${item.bg})`}"></div>
+                        <div class="slider-content">
+                            <div class="slider-title">{{ item.title }}</div>
+                            <div class="silder-subtitle">{{ item.subtitle }}</div>
+                        </div>
+                    </li>
+                </template>
+            </ul>
+            <div class="slider-menu">
+                <template v-for="(item, itemIndex) in items">
+                    <div :class="{active: currentIndex == itemIndex}" @click="setIndex(itemIndex)">{{ itemIndex }}</div>
+                </template>
+            </div>
+        </div>
     </div>
-
-
-    <div style="width: 100px; height: 100px; background-color: rgb(255, 0, 234); color: blue; margin-left: 10px; margin-top: 10px; text-align: center; line-height: 100px; border-radius: 100px">
-        TEXT
+    <div class="patent-design" id="patent-design">
+        <div class="design-wrap" ref="wrap">
+            <div class="container">
+                <div class="design-content">
+                    <div class="design-title">專利結構設計</div>
+                    <div class="design-text">卡扣設計，讓您輕鬆替換重量，且安全不怕摔</div>
+                    <div>
+                        <button class="button" @click="doToggle">瞭解詳情</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="design-popup" ref="popup" @click="doToggle">
+            POPUP
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div>
+                <a href="final_layout.html">
+                    <img src="images/final_layout/logo_w.png" alt="">
+                </a>
+            </div>
+            <div>
+                <ul class="footer-social">
+                    <li>
+                        <a href="#"><i class="fa-solid fa-house"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-line"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="footer-copyright">&copy; 2023 TIXTEEL FITNESSCO., LTD,All Rights Reserved.</div>
+        </div>
     </div>
 </body>
+<script src="js/gsap.min.js"></script>
+<script src="js/vue3.js"></script>
+<script src="js/final_layout.js"></script>
 
 </html>
