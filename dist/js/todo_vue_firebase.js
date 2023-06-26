@@ -151,7 +151,15 @@ let vm = Vue.createApp({
         }
     },
     async mounted() {
-        this.pending = await database.get('todo-pending', []);
-        this.done = await database.get('todo-done', []);
+        // this.pending = await database.get('todo-pending', []);
+        // this.done = await database.get('todo-done', []);
+
+        listen('todo-pending', (value) => {
+            this.pending = value || [];
+        })
+
+        listen('todo-done', (value) => {
+            this.done = value || [];
+        })
     }
 }).mount('#app');
